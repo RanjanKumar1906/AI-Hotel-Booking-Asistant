@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🏨 AI Hotel Booking Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+  <div class="container">
+    <h1>✨ AI Hotel Booking Assistant ✨</h1>
+    <div class="chatbox">
+      <input type="text" id="cityInput" placeholder="🏙️ Enter city name..." />
+      <button onclick="searchHotels()">🔍 Search</button>
+    </div>
+    <div id="results"></div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
